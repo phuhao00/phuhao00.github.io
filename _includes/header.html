@@ -22,6 +22,10 @@
                     endif %}>
                     <i class="fas fa-images"></i> 作品集
                 </a>
+                <a href="{{ '/experience' | relative_url }}" {% if page.url contains 'experience' %}class="active" {%
+                    endif %}>
+                    <i class="fas fa-briefcase"></i> 项目经历
+                </a>
                 <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active" {% endif %}>
                     <i class="fas fa-user"></i> 关于
                 </a>
