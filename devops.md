@@ -84,6 +84,38 @@ permalink: /devops/
                 </div>
             </div>
         </div>
+
+        <!-- 截图展示 -->
+        <div class="devops-screenshots">
+            <h3 class="screenshots-title"><i class="fas fa-images"></i> 运维平台截图</h3>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <div class="screenshot-wrapper">
+                        <img src="{{ '/assets/images/tencent_cloud/集群.png' | relative_url }}" alt="腾讯云集群资源管理">
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="screenshot-info">
+                        <h4>集群资源管理</h4>
+                        <p>资源概览与用量监控，实时掌握集群运行状态</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-item">
+                    <div class="screenshot-wrapper">
+                        <img src="{{ '/assets/images/tencent_cloud/cicd.png' | relative_url }}" alt="CI/CD流水线">
+                        <div class="screenshot-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="screenshot-info">
+                        <h4>CI/CD自动化流水线</h4>
+                        <p>构建计划与持续集成，实现代码自动构建和部署</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 技术栈 -->
