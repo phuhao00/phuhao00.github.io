@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Go语言入门指南"
-date: 2025-12-16 10:00:00 +0800
+date: 2018-04-21
 categories: [编程语言]
 tags: [Go, Golang, 教程]
 ---

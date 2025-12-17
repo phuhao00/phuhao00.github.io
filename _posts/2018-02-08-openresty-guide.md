@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenResty 使用总结"
-date: 2025-12-17
+date: 2018-02-08
 categories: [OpenResty, Nginx, Lua]
 ---
 

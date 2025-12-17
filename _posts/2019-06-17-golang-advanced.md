@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Go语言高级使用总结"
-date: 2025-12-17
+date: 2019-06-17
 categories: [golang, programming]
 tags: [golang, concurrency, performance, advanced]
 ---
