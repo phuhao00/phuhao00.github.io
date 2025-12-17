@@ -10,7 +10,7 @@ permalink: /experience/
     </h1>
     
     <div class="experience-intro">
-        <p>这里展示了我参与过的主要项目经验和技术实践。</p>
+        <p>专注于游戏服务器开发和分布式系统架构，积累了丰富的大规模在线游戏后端开发经验。</p>
     </div>
 
     <!-- 时间线布局 -->
@@ -21,45 +21,41 @@ permalink: /experience/
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2024.06 - 2024.12
+                    <i class="fas fa-calendar-alt"></i> 2022.01 - 至今
                 </div>
                 <div class="experience-card">
                     <div class="experience-header">
                         <h2>
-                            <i class="fas fa-project-diagram"></i> 大型电商平台微服务架构改造
+                            <i class="fas fa-gamepad"></i> 大型MMO游戏服务器架构
                         </h2>
                         <span class="role-badge">技术负责人</span>
                     </div>
                     <div class="company-info">
-                        <i class="fas fa-building"></i> XX科技有限公司
+                        <i class="fas fa-building"></i> 核心项目
                     </div>
                     <div class="experience-description">
-                        <p>负责将传统单体应用拆分为微服务架构，提升系统可扩展性和稳定性。</p>
-                        <h4>主要职责：</h4>
+                        <p>设计并实现企业级MMO游戏服务器架构，采用领域驱动设计（DDD）和微服务架构，支持大规模玩家在线、动态扩容、热更新等特性。</p>
+                        <h4>核心成果：</h4>
                         <ul>
-                            <li>设计并实现微服务架构方案，拆分用户、订单、商品等核心服务</li>
-                            <li>引入服务网格（Service Mesh）技术，实现服务间的流量管理和安全通信</li>
-                            <li>建立完善的监控体系，包括链路追踪、日志收集和性能指标监控</li>
-                            <li>优化数据库架构，实现读写分离和分库分表，提升系统性能</li>
-                        </ul>
-                        <h4>项目成果：</h4>
-                        <ul>
-                            <li>系统响应时间降低 40%，并发处理能力提升 3 倍</li>
-                            <li>服务可用性从 99.5% 提升到 99.9%</li>
-                            <li>部署效率提升 60%，实现快速迭代和灰度发布</li>
+                            <li>设计基于 Actor 模型的分布式游戏服务器架构，支持横向扩展</li>
+                            <li>实现玩家系统、社交系统、战斗系统、宠物系统、建筑系统等核心gameplay</li>
+                            <li>使用 MongoDB 分片集群存储玩家数据，Redis 集群作为缓存层</li>
+                            <li>采用 NATS 消息队列实现服务间通信，保证消息可靠性</li>
+                            <li>建立完善的服务发现、配置管理、监控告警体系</li>
+                            <li>服务器承载能力提升至单服 10,000+ 在线玩家，响应时间 < 50ms</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <h4><i class="fas fa-tools"></i> 技术栈：</h4>
                         <div class="tech-tags">
                             <span class="tech-tag">Go</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Istio</span>
+                            <span class="tech-tag">Actor模型</span>
+                            <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">RabbitMQ</span>
-                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">NATS</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
                         </div>
                     </div>
                 </div>
@@ -71,44 +67,38 @@ permalink: /experience/
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2023.08 - 2024.05
+                    <i class="fas fa-calendar-alt"></i> 2023.06 - 2024.03
                 </div>
                 <div class="experience-card">
                     <div class="experience-header">
                         <h2>
-                            <i class="fas fa-robot"></i> 智能客服系统开发
+                            <i class="fas fa-link"></i> 区块链游戏服务器 (GameFi)
                         </h2>
                         <span class="role-badge">核心开发</span>
                     </div>
                     <div class="company-info">
-                        <i class="fas fa-building"></i> YY互联网公司
+                        <i class="fas fa-building"></i> 创新项目
                     </div>
                     <div class="experience-description">
-                        <p>开发基于 AI 的智能客服系统，提供7x24小时自动化客户服务。</p>
-                        <h4>主要职责：</h4>
+                        <p>开发基于 Sui 区块链的游戏服务器，实现链上资产与游戏逻辑的深度结合，支持 NFT 道具、代币经济、玩家资产上链等功能。</p>
+                        <h4>核心成果：</h4>
                         <ul>
-                            <li>基于自然语言处理技术，实现智能问答和意图识别功能</li>
-                            <li>设计对话流程引擎，支持复杂的多轮对话场景</li>
-                            <li>开发知识库管理系统，支持快速更新和维护客服知识</li>
-                            <li>集成语音识别和文本转语音技术，实现语音客服功能</li>
-                        </ul>
-                        <h4>项目成果：</h4>
-                        <ul>
-                            <li>自动解决率达到 75%，大幅降低人工客服压力</li>
-                            <li>客户满意度提升 25%，平均响应时间从 5 分钟降至 10 秒</li>
-                            <li>节省人工成本约 40%</li>
+                            <li>使用 Sui Move 开发智能合约，实现游戏资产的链上管理</li>
+                            <li>设计混合架构，链下游戏逻辑 + 链上资产确权，平衡性能与去中心化</li>
+                            <li>实现钱包连接、交易签名、链上查询等 Web3 功能</li>
+                            <li>开发资产跨链桥接工具，支持多链资产流通</li>
+                            <li>成功上线并运营，日活用户 1000+，链上交易总额超 $100K</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <h4><i class="fas fa-tools"></i> 技术栈：</h4>
                         <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">BERT</span>
-                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Sui Move</span>
+                            <span class="tech-tag">Web3</span>
+                            <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Elasticsearch</span>
-                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Redis</span>
                         </div>
                     </div>
                 </div>
@@ -120,45 +110,36 @@ permalink: /experience/
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2022.09 - 2023.07
+                    <i class="fas fa-calendar-alt"></i> 2023.01 - 2023.08
                 </div>
                 <div class="experience-card">
                     <div class="experience-header">
                         <h2>
-                            <i class="fas fa-mobile-alt"></i> 移动应用全栈开发
+                            <i class="fas fa-tools"></i> MongoDB 可视化管理工具
                         </h2>
-                        <span class="role-badge">全栈工程师</span>
+                        <span class="role-badge">个人项目</span>
                     </div>
                     <div class="company-info">
-                        <i class="fas fa-building"></i> ZZ创业公司
+                        <i class="fas fa-building"></i> 开源项目
                     </div>
                     <div class="experience-description">
-                        <p>从零开始开发一款社交类移动应用，覆盖前端、后端和运维全栈技术。</p>
-                        <h4>主要职责：</h4>
+                        <p>开发桌面版 MongoDB 可视化管理工具，提供数据浏览、查询、编辑、导入导出等功能，简化数据库日常操作，提升开发效率。</p>
+                        <h4>核心成果：</h4>
                         <ul>
-                            <li>使用 React Native 开发跨平台移动应用，实现 iOS 和 Android 双端发布</li>
-                            <li>构建 RESTful API 后端服务，处理用户认证、内容发布等核心功能</li>
-                            <li>实现实时消息推送和即时通讯功能</li>
-                            <li>搭建 CI/CD 流程，实现自动化测试和部署</li>
-                        </ul>
-                        <h4>项目成果：</h4>
-                        <ul>
-                            <li>上线 3 个月获得 5 万+ 活跃用户</li>
-                            <li>App Store 评分 4.5 星</li>
-                            <li>日活跃率达到 30%</li>
+                            <li>使用 Electron + TypeScript 开发跨平台桌面应用</li>
+                            <li>实现连接管理、数据库/集合浏览、文档CRUD操作</li>
+                            <li>支持复杂查询构建器和聚合管道可视化编辑</li>
+                            <li>集成数据导入导出（JSON/CSV）和数据备份功能</li>
+                            <li>开源发布，获得 GitHub Stars 500+</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <h4><i class="fas fa-tools"></i> 技术栈：</h4>
                         <div class="tech-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Electron</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB Driver</span>
                         </div>
                     </div>
                 </div>
@@ -170,44 +151,35 @@ permalink: /experience/
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2021.10 - 2022.08
+                    <i class="fas fa-calendar-alt"></i> 2022.09 - 2023.05
                 </div>
                 <div class="experience-card">
                     <div class="experience-header">
                         <h2>
-                            <i class="fas fa-chart-line"></i> 数据可视化分析平台
+                            <i class="fas fa-cube"></i> Sanji 游戏引擎
                         </h2>
-                        <span class="role-badge">前端开发</span>
+                        <span class="role-badge">个人研究</span>
                     </div>
                     <div class="company-info">
-                        <i class="fas fa-building"></i> AA数据科技公司
+                        <i class="fas fa-building"></i> 研究项目
                     </div>
                     <div class="experience-description">
-                        <p>开发企业级数据可视化分析平台，为业务决策提供数据支持。</p>
-                        <h4>主要职责：</h4>
+                        <p>使用 Rust 开发的轻量级游戏引擎，探索现代游戏引擎架构和 ECS 设计模式，学习图形渲染、物理引擎、音频系统等游戏引擎核心技术。</p>
+                        <h4>核心成果：</h4>
                         <ul>
-                            <li>使用 Vue.js 开发响应式数据可视化界面</li>
-                            <li>集成 ECharts、D3.js 等图表库，实现丰富的数据展示效果</li>
-                            <li>开发拖拽式报表设计器，支持用户自定义数据看板</li>
-                            <li>优化大数据量渲染性能，实现实时数据更新</li>
-                        </ul>
-                        <h4>项目成果：</h4>
-                        <ul>
-                            <li>支持百万级数据的流畅展示</li>
-                            <li>用户自定义报表使用率达 80%</li>
-                            <li>帮助企业决策效率提升 50%</li>
+                            <li>实现基于 ECS (Entity-Component-System) 的游戏架构</li>
+                            <li>集成 wgpu 渲染后端，支持现代图形 API</li>
+                            <li>实现场景管理、资源加载、输入系统等基础功能</li>
+                            <li>深入学习 Rust 内存安全和并发编程特性</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <h4><i class="fas fa-tools"></i> 技术栈：</h4>
                         <div class="tech-tags">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">ECharts</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Element UI</span>
-                            <span class="tech-tag">Webpack</span>
-                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">Rust</span>
+                            <span class="tech-tag">wgpu</span>
+                            <span class="tech-tag">ECS</span>
+                            <span class="tech-tag">Game Engine</span>
                         </div>
                     </div>
                 </div>
@@ -226,41 +198,66 @@ permalink: /experience/
                 <h3><i class="fas fa-laptop-code"></i> 编程语言</h3>
                 <div class="skill-items">
                     <span class="skill-item">Go</span>
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">JavaScript/TypeScript</span>
-                    <span class="skill-item">Java</span>
-                    <span class="skill-item">Lua</span>
+                    <span class="skill-item">C++</span>
+                    <span class="skill-item">TypeScript/JavaScript</span>
+                    <span class="skill-item">Rust</span>
+                    <span class="skill-item">C#</span>
+                    <span class="skill-item">Move</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3><i class="fas fa-layer-group"></i> 后端技术</h3>
+                <h3><i class="fas fa-gamepad"></i> 游戏服务器</h3>
                 <div class="skill-items">
-                    <span class="skill-item">Microservices</span>
-                    <span class="skill-item">Kubernetes</span>
-                    <span class="skill-item">Docker</span>
-                    <span class="skill-item">MySQL/PostgreSQL</span>
+                    <span class="skill-item">MMO架构</span>
+                    <span class="skill-item">Actor模型</span>
+                    <span class="skill-item">微服务架构</span>
+                    <span class="skill-item">分布式系统</span>
+                    <span class="skill-item">DDD领域驱动</span>
+                    <span class="skill-item">网络编程</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-network-wired"></i> 网络与协议</h3>
+                <div class="skill-items">
+                    <span class="skill-item">TCP/UDP</span>
+                    <span class="skill-item">WebSocket</span>
+                    <span class="skill-item">gRPC</span>
+                    <span class="skill-item">HTTP/REST</span>
+                    <span class="skill-item">KCP</span>
+                    <span class="skill-item">Protobuf</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> 数据库与中间件</h3>
+                <div class="skill-items">
+                    <span class="skill-item">MongoDB</span>
                     <span class="skill-item">Redis</span>
-                    <span class="skill-item">Message Queue</span>
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">MySQL</span>
+                    <span class="skill-item">NATS</span>
+                    <span class="skill-item">Elasticsearch</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3><i class="fas fa-palette"></i> 前端技术</h3>
+                <h3><i class="fas fa-tools"></i> DevOps与工具</h3>
                 <div class="skill-items">
-                    <span class="skill-item">React</span>
-                    <span class="skill-item">Vue.js</span>
-                    <span class="skill-item">React Native</span>
-                    <span class="skill-item">HTML/CSS</span>
-                    <span class="skill-item">Webpack</span>
+                    <span class="skill-item">Docker</span>
+                    <span class="skill-item">Kubernetes</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">GitHub Actions</span>
+                    <span class="skill-item">CI/CD</span>
+                    <span class="skill-item">Prometheus</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                <h3><i class="fas fa-link"></i> 区块链</h3>
                 <div class="skill-items">
-                    <span class="skill-item">TensorFlow</span>
-                    <span class="skill-item">PyTorch</span>
-                    <span class="skill-item">NLP</span>
-                    <span class="skill-item">BERT</span>
-                    <span class="skill-item">Machine Learning</span>
+                    <span class="skill-item">Sui Move</span>
+                    <span class="skill-item">智能合约</span>
+                    <span class="skill-item">Web3</span>
+                    <span class="skill-item">GameFi</span>
+                    <span class="skill-item">DApp</span>
+                    <span class="skill-item">ERC-4337</span>
                 </div>
             </div>
         </div>
