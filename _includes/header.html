@@ -26,6 +26,9 @@
                     endif %}>
                     <i class="fas fa-briefcase"></i> 项目经历
                 </a>
+                <a href="{{ '/resume' | relative_url }}" {% if page.url contains 'resume' %}class="active" {% endif %}>
+                    <i class="fas fa-file-alt"></i> 简历
+                </a>
                 <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active" {% endif %}>
                     <i class="fas fa-user"></i> 关于
                 </a>

@@ -1501,3 +1501,653 @@ html {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========== 简历页面样式 ========== */
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--bg-color);
+}
+
+/* 简历头部 */
+.resume-header {
+    background: var(--surface-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-areas:
+        "avatar title actions"
+        "avatar contact actions";
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.resume-avatar {
+    grid-area: avatar;
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.resume-title-section {
+    grid-area: title;
+}
+
+.resume-name {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 700;
+}
+
+.resume-position {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+}
+
+.resume-contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    width: 18px;
+}
+
+.contact-item a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+.resume-actions {
+    grid-area: actions;
+}
+
+.btn-download {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+}
+
+.btn-download i {
+    font-size: 1rem;
+}
+
+/* 简历内容区 */
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* 简历section */
+.resume-section {
+    background: var(--surface-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.resume-section .section-title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.section-content {
+    color: var(--text-color);
+}
+
+/* 个人简介 */
+.summary-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* 技能部分 */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-group {
+    padding: 1.2rem;
+    background: var(--hover-bg);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.skill-group h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.skill-group h3 i {
+    color: var(--primary-color);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skill-tag {
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.skill-tag.level-expert {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border-color: var(--primary-color);
+}
+
+.skill-tag.level-proficient {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.skill-tag.level-familiar {
+    background: var(--hover-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-legend {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.skill-legend span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-dot.expert {
+    background: var(--primary-color);
+}
+
+.legend-dot.proficient {
+    background: var(--accent-color);
+}
+
+.legend-dot.familiar {
+    background: var(--text-secondary);
+}
+
+/* 工作经历 */
+.experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.exp-title {
+    flex: 1;
+}
+
+.exp-title h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+}
+
+.company-name {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.exp-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.exp-content h4 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    margin: 1rem 0 0.6rem 0;
+}
+
+.exp-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exp-content li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.exp-content li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.tech-stack {
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+    background: var(--code-bg);
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* 项目经验 */
+.project-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--hover-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.project-header h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.project-header h3 i {
+    color: var(--primary-color);
+}
+
+.project-tag {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.project-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.project-content h4 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    margin: 1rem 0 0.6rem 0;
+}
+
+.project-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-content li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.project-content li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.project-tech {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: var(--code-bg);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* 开源贡献 */
+.opensource-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.opensource-item {
+    padding: 1.5rem;
+    background: var(--hover-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.opensource-item h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.8rem 0;
+}
+
+.opensource-item h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.3s ease;
+}
+
+.opensource-item h3 a:hover {
+    color: var(--text-color);
+}
+
+.opensource-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.github-stats {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.github-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.github-stats i {
+    color: var(--primary-color);
+}
+
+/* 教育背景 */
+.education-item {
+    padding: 1.5rem;
+    background: var(--hover-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.edu-title {
+    flex: 1;
+}
+
+.edu-title h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+}
+
+.school-name {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.edu-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.edu-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* 自我评价 */
+.evaluation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.evaluation-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.evaluation-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.evaluation-list li strong {
+    color: var(--primary-color);
+}
+
+/* 打印样式 */
+@media print {
+    .resume-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .resume-header {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .btn-download {
+        display: none;
+    }
+
+    .resume-section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+
+    .project-item,
+    .experience-item {
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 1rem;
+    }
+
+    .resume-header {
+        grid-template-areas:
+            "avatar title"
+            "contact contact"
+            "actions actions";
+        grid-template-columns: auto 1fr;
+        padding: 1.5rem;
+    }
+
+    .resume-avatar {
+        font-size: 3.5rem;
+    }
+
+    .resume-name {
+        font-size: 1.8rem;
+    }
+
+    .resume-position {
+        font-size: 1rem;
+    }
+
+    .resume-contact {
+        flex-direction: column;
+    }
+
+    .resume-actions {
+        width: 100%;
+    }
+
+    .btn-download {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .resume-section {
+        padding: 1.5rem;
+    }
+
+    .resume-section .section-title {
+        font-size: 1.4rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-header,
+    .project-header,
+    .edu-header {
+        flex-direction: column;
+    }
+
+    .skill-legend {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+}
