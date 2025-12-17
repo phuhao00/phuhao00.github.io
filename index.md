@@ -4,8 +4,8 @@ title: 首页
 ---
 
 <div class="hero">
-    <h1>👋 欢迎来到我的技术博客</h1>
-    <p>记录代码人生，分享技术见解</p>
+    <h1>👋 优雅永不过时</h1>
+    <p>需要耐心一点</p>
 </div>
 
 <div class="posts-list">
