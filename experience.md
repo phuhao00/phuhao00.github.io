@@ -10,7 +10,7 @@ permalink: /experience/
     </h1>
     
     <div class="experience-intro">
-        <p>专注于游戏服务器开发和分布式系统架构，积累了丰富的大规模在线游戏后端开发经验。</p>
+        <p>7年+游戏服务器开发经验，参与过多款MMO、ARPG、卡牌等类型游戏开发，具备完整的0-1项目经验和大规模高并发项目实战经验。</p>
     </div>
 
     <!-- 时间线布局 -->
@@ -21,33 +21,317 @@ permalink: /experience/
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2022.01 - 至今
+                    <i class="fas fa-calendar-alt"></i> 2025.09 - 至今
                 </div>
                 <div class="experience-card">
                     <div class="experience-header">
                         <h2>
-                            <i class="fas fa-gamepad"></i> 大型MMO游戏服务器架构
+                            <i class="fas fa-gamepad"></i> Mod游戏开发
                         </h2>
-                        <span class="role-badge">技术负责人</span>
+                        <span class="role-badge">服务器架构师</span>
                     </div>
                     <div class="company-info">
-                        <i class="fas fa-building"></i> 核心项目
+                        <i class="fas fa-building"></i> 某游戏公司
                     </div>
                     <div class="experience-description">
-                        <p>设计并实现企业级MMO游戏服务器架构，采用领域驱动设计（DDD）和微服务架构，支持大规模玩家在线、动态扩容、热更新等特性。</p>
-                        <h4>核心成果：</h4>
+                        <p>负责Mod游戏的服务器框架设计与开发，涉及多款热门游戏的Mod制作。</p>
+                        <h4>主要职责：</h4>
                         <ul>
-                            <li>设计基于 Actor 模型的分布式游戏服务器架构，支持横向扩展</li>
-                            <li>实现玩家系统、社交系统、战斗系统、宠物系统、建筑系统等核心gameplay</li>
-                            <li>使用 MongoDB 分片集群存储玩家数据，Redis 集群作为缓存层</li>
-                            <li>采用 NATS 消息队列实现服务间通信，保证消息可靠性</li>
-                            <li>建立完善的服务发现、配置管理、监控告警体系</li>
-                            <li>服务器承载能力提升至单服 10,000+ 在线玩家，响应时间 < 50ms</li>
+                            <li>独立设计并实现分布式游戏服务器框架（Golang + MySQL + Redis + ELK）</li>
+                            <li>鸭科夫、DOTA2、骑砍等游戏Mod开发</li>
+                            <li>使用C#、TypeScript、Lua、React等多种技术栈进行Mod逻辑开发</li>
+                            <li>搭建完整的日志收集和分析系统（ELK）</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <h4><i class="fas fa-tools"></i> 技术栈：</h4>
                         <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Lua</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">ELK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 2 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2025.04 - 2025.06
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-layer-group"></i> 星引擎Party - 战斗卡牌游戏
+                        </h2>
+                        <span class="role-badge">游戏服务器开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 上海电蝉网络科技有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>负责卡牌游戏的服务器开发与性能优化工作。</p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>模拟客户端行为，编写PVE压测工具，搭建Prometheus + Node-exporter监控系统</li>
+                            <li>重构好友模块，采用分页 + 热数据缓存机制，显著提高响应速度</li>
+                            <li>重构任务模块，抽象任务实现，提高可维护性和性能</li>
+                            <li>重构选角色逻辑，新增皮肤选择功能</li>
+                            <li>使用pprof和go-linter进行代码性能分析和质量保证</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Actor模型</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Unity3D</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">pprof</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 3 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2024.04 - 2024.10
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-dragon"></i> 千年之旅 - ARPG游戏
+                        </h2>
+                        <span class="role-badge">游戏服务器开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 上海英澈网络科技有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>负责ARPG游戏线上活动开发与性能优化，项目由哔哩哔哩运营发行，并成功上线台湾服、韩服。</p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>独立完成多个线上活动玩法开发：拼图、每日Boss战、翻牌活动等</li>
+                            <li>重构活动系统，提高代码可维护性和开发效率</li>
+                            <li>编写代码检查脚本，自动发现项目代码缺陷和优化点</li>
+                            <li>开发模拟客户端工具，支持控制台和Web页面操作，提高测试效率</li>
+                            <li>使用pprof和go trace定位性能瓶颈，优化协程分配策略，解决请求排队问题</li>
+                            <li>熟悉B站上线发布流程，参与多服务器版本维护</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Leaf框架</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">etcd</span>
+                            <span class="tech-tag">Unity3D</span>
+                            <span class="tech-tag">pprof</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 4 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2023.08 - 2024.02
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-brain"></i> 途兔智能助手 & CityWalk物语
+                        </h2>
+                        <span class="role-badge">全栈开发/AWS运维</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 上海途兔智能科技有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>AI初创公司，负责城市漫步规划小程序和AI休闲游戏的全栈开发与AWS运维工作。</p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>独立完成微信小程序前后端框架搭建，接入AI大模型服务</li>
+                            <li>搭建AWS生产环境（ECS、CI/CD、API网关、RDS、OpenSearch等）</li>
+                            <li>实现3种大模型长轮询接入方案，改进RPC一次请求多次应答机制</li>
+                            <li>使用Qt开发AI对话NPC的休闲小游戏《CityWalk物语》</li>
+                            <li>开发网页爬虫，采集旅游和出行数据</li>
+                            <li>大模型微调与预训练，集成ChatGPT API</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Vue</span>
+                            <span class="tech-tag">C++/Qt</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">OpenSearch</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 5 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2022.10 - 2023.08
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-tree"></i> 守护者之森 - MMO微信游戏
+                        </h2>
+                        <span class="role-badge">游戏服务器开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 上海绿岸网络科技股份有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>负责MMO类型微信游戏的核心系统开发。</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>开发任务系统：家族任务、历练任务、跑环任务</li>
+                            <li>实现装备合成系统和装备排行榜功能</li>
+                            <li>开发泡点经验系统（挂机奖励玩法）</li>
+                            <li>实现玉门战斗副本（玩家镜像挑战）</li>
+                            <li>负责各模块战斗力计算和功能解锁系统</li>
+                            <li>使用状态机处理复杂游戏逻辑</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">状态机</span>
+                            <span class="tech-tag">分布式架构</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 6 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2021.03 - 2022.09
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-star"></i> 摩尔庄园 - 千万日活MMO手游
+                        </h2>
+                        <span class="role-badge">游戏服务器开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 上海淘米网络科技有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>参与千万日活、百万同时在线的爆款MMO手游开发，雷霆负责运营。</p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>开发多种品牌联动活动：女足、女排、草莓音乐节、神舟飞船等热门事件联动</li>
+                            <li>负责昆虫系统开发（含全服广播机制）</li>
+                            <li>优化已有功能：图鉴系统、通行证、天气系统</li>
+                            <li>集成数数科技SDK，完成日志埋点和数据分析</li>
+                            <li>参与台湾服上线，与4399合作</li>
+                            <li>高并发、高性能项目实战经验（百万级同时在线）</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Consul</span>
+                            <span class="tech-tag">NSQ</span>
+                            <span class="tech-tag">RPC</span>
+                            <span class="tech-tag">Unity3D</span>
+                            <span class="tech-tag">ELK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 7 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2017.12 - 2021.03
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-paw"></i> 神奇精灵 - 宝可梦IP MMO
+                        </h2>
+                        <span class="role-badge">游戏服务器开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 武汉升鹏科技有限公司
+                    </div>
+                    <div class="experience-description">
+                        <p>从项目开发初期参与，具备完整的0-1项目经验，负责核心gameplay系统开发。</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>开发宠物技能系统和养成玩法（升级、升阶、突破）</li>
+                            <li>实现多频道聊天系统：组队、家族、阵营、私聊、世界、系统聊天</li>
+                            <li>开发任务模块：跑环、家族、阵营历练、头衔、成就系统</li>
+                            <li>实现多类型商城：神秘商店、家族商城、阵营商城</li>
+                            <li>开发活动系统：夺宝、任务、签到等</li>
+                            <li>使用C# Orleans和Lua进行分布式系统开发</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">C# Orleans</span>
+                            <span class="tech-tag">Lua</span>
+                            <span class="tech-tag">Openresty</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Unity3D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 技能总结 -->
                             <span class="tech-tag">Go</span>
                             <span class="tech-tag">Actor模型</span>
                             <span class="tech-tag">MongoDB</span>
@@ -62,131 +346,6 @@ permalink: /experience/
             </div>
         </div>
 
-        <!-- 项目经历 2 -->
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2023.06 - 2024.03
-                </div>
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h2>
-                            <i class="fas fa-link"></i> 区块链游戏服务器 (GameFi)
-                        </h2>
-                        <span class="role-badge">核心开发</span>
-                    </div>
-                    <div class="company-info">
-                        <i class="fas fa-building"></i> 创新项目
-                    </div>
-                    <div class="experience-description">
-                        <p>开发基于 Sui 区块链的游戏服务器，实现链上资产与游戏逻辑的深度结合，支持 NFT 道具、代币经济、玩家资产上链等功能。</p>
-                        <h4>核心成果：</h4>
-                        <ul>
-                            <li>使用 Sui Move 开发智能合约，实现游戏资产的链上管理</li>
-                            <li>设计混合架构，链下游戏逻辑 + 链上资产确权，平衡性能与去中心化</li>
-                            <li>实现钱包连接、交易签名、链上查询等 Web3 功能</li>
-                            <li>开发资产跨链桥接工具，支持多链资产流通</li>
-                            <li>成功上线并运营，日活用户 1000+，链上交易总额超 $100K</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Go</span>
-                            <span class="tech-tag">Sui Move</span>
-                            <span class="tech-tag">Web3</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Redis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 项目经历 3 -->
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2023.01 - 2023.08
-                </div>
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h2>
-                            <i class="fas fa-tools"></i> MongoDB 可视化管理工具
-                        </h2>
-                        <span class="role-badge">个人项目</span>
-                    </div>
-                    <div class="company-info">
-                        <i class="fas fa-building"></i> 开源项目
-                    </div>
-                    <div class="experience-description">
-                        <p>开发桌面版 MongoDB 可视化管理工具，提供数据浏览、查询、编辑、导入导出等功能，简化数据库日常操作，提升开发效率。</p>
-                        <h4>核心成果：</h4>
-                        <ul>
-                            <li>使用 Electron + TypeScript 开发跨平台桌面应用</li>
-                            <li>实现连接管理、数据库/集合浏览、文档CRUD操作</li>
-                            <li>支持复杂查询构建器和聚合管道可视化编辑</li>
-                            <li>集成数据导入导出（JSON/CSV）和数据备份功能</li>
-                            <li>开源发布，获得 GitHub Stars 500+</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Electron</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">MongoDB Driver</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 项目经历 4 -->
-        <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <div class="timeline-date">
-                    <i class="fas fa-calendar-alt"></i> 2022.09 - 2023.05
-                </div>
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h2>
-                            <i class="fas fa-cube"></i> Sanji 游戏引擎
-                        </h2>
-                        <span class="role-badge">个人研究</span>
-                    </div>
-                    <div class="company-info">
-                        <i class="fas fa-building"></i> 研究项目
-                    </div>
-                    <div class="experience-description">
-                        <p>使用 Rust 开发的轻量级游戏引擎，探索现代游戏引擎架构和 ECS 设计模式，学习图形渲染、物理引擎、音频系统等游戏引擎核心技术。</p>
-                        <h4>核心成果：</h4>
-                        <ul>
-                            <li>实现基于 ECS (Entity-Component-System) 的游戏架构</li>
-                            <li>集成 wgpu 渲染后端，支持现代图形 API</li>
-                            <li>实现场景管理、资源加载、输入系统等基础功能</li>
-                            <li>深入学习 Rust 内存安全和并发编程特性</li>
-                        </ul>
-                    </div>
-                    <div class="tech-stack">
-                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Rust</span>
-                            <span class="tech-tag">wgpu</span>
-                            <span class="tech-tag">ECS</span>
-                            <span class="tech-tag">Game Engine</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
     <!-- 技能总结 -->
     <section class="skills-summary">

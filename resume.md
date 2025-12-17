@@ -16,16 +16,20 @@ permalink: /resume/
         </div>
         <div class="resume-contact">
             <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:18186224595">18186224595</a>
+            </div>
+            <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:hhaouhh@gmail.com">hhaouhh@gmail.com</a>
+                <a href="mailto:1559531623@qq.com">1559531623@qq.com</a>
             </div>
             <div class="contact-item">
                 <i class="fab fa-github"></i>
                 <a href="https://github.com/phuhao00" target="_blank">github.com/phuhao00</a>
             </div>
             <div class="contact-item">
-                <i class="fas fa-globe"></i>
-                <a href="https://phuhao00.github.io" target="_blank">phuhao00.github.io</a>
+                <i class="fab fa-bilibili"></i>
+                <a href="https://space.bilibili.com/93811554" target="_blank">B站空间</a>
             </div>
         </div>
         <div class="resume-actions">
@@ -44,13 +48,13 @@ permalink: /resume/
             </h2>
             <div class="section-content">
                 <p class="summary-text">
-                    资深游戏服务器开发工程师，拥有<strong>5年+</strong>游戏后端开发经验，精通 <strong>Go</strong> 和 <strong>C++</strong>，
-                    擅长大规模MMO游戏服务器架构设计与开发。具备完整的游戏服务端研发能力，从底层网络框架到上层业务逻辑均有深入理解。
-                    熟悉微服务架构、分布式系统设计，对高并发、高可用系统有丰富的实践经验。
+                    资深游戏服务器开发工程师，拥有<strong>7年+</strong>游戏后端开发经验，精通 <strong>Golang</strong> 和 <strong>C++</strong>，
+                    擅长大规模MMO游戏服务器架构设计与开发。参与过千万日活、百万同时在线的爆款游戏项目（摩尔庄园），
+                    具备完整的游戏服务端研发能力和高并发、高性能系统实战经验。
                 </p>
                 <p class="summary-text">
-                    热衷于技术创新，积极探索区块链与游戏结合的新方向，具备 <strong>Sui Move</strong> 智能合约开发能力。
-                    开源爱好者，维护多个游戏开发相关项目，致力于分享技术经验，推动游戏开发技术发展。
+                    熟悉MMO、RPG、ARPG等类型游戏架构设计，具备游戏全栈开发能力（偏服务器），有帧同步、分布式架构、微服务、DDD等实战经验。
+                    GitHub开源游戏服务器框架（Actor模型、云原生），熟悉区块链技术（Sui Move、Solana），有出海项目和0-1项目经验。
                 </p>
             </div>
         </section>
@@ -152,23 +156,19 @@ permalink: /resume/
                 <div class="experience-item">
                     <div class="exp-header">
                         <div class="exp-title">
-                            <h3>高级游戏服务器开发工程师</h3>
-                            <span class="company-name">某知名游戏公司</span>
+                            <h3>游戏服务器开发工程师</h3>
+                            <span class="company-name">某游戏公司</span>
                         </div>
-                        <div class="exp-date">2021.06 - 至今</div>
+                        <div class="exp-date">2025.09 - 至今</div>
                     </div>
                     <div class="exp-content">
                         <h4>主要职责：</h4>
                         <ul>
-                            <li>负责MMO游戏服务器核心系统架构设计与开发，支持万人同服</li>
-                            <li>使用 Go 开发高性能游戏服务端，采用 Actor 模型和微服务架构</li>
-                            <li>设计并实现玩家系统、社交系统、战斗系统、建筑系统等核心gameplay</li>
-                            <li>优化服务器性能，使用 Redis 缓存和消息队列提升系统吞吐量</li>
-                            <li>建立完善的监控和日志系统，保障线上服务稳定性</li>
-                            <li>参与技术选型和架构评审，推动团队技术栈升级</li>
+                            <li>独立设计分布式游戏服务器框架（Golang + MySQL + Redis + ELK）</li>
+                            <li>鸭科夫、DOTA2、骑砍等游戏Mod开发（C#、TypeScript、Lua、React）</li>
                         </ul>
                         <h4>技术栈：</h4>
-                        <p class="tech-stack">Go, C++, MongoDB, Redis, NATS, Docker, Kubernetes, gRPC, WebSocket</p>
+                        <p class="tech-stack">Golang, C#, TypeScript, Lua, React, MySQL, Redis, ELK</p>
                     </div>
                 </div>
 
@@ -176,22 +176,141 @@ permalink: /resume/
                     <div class="exp-header">
                         <div class="exp-title">
                             <h3>游戏服务器开发工程师</h3>
-                            <span class="company-name">某互联网游戏公司</span>
+                            <span class="company-name">上海电蝉网络科技有限公司</span>
                         </div>
-                        <div class="exp-date">2019.07 - 2021.05</div>
+                        <div class="exp-date">2025.04 - 2025.06</div>
                     </div>
                     <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《星引擎Party》- 战斗卡牌游戏（自研Actor模型架构）</p>
                         <h4>主要职责：</h4>
                         <ul>
-                            <li>参与多款休闲游戏和卡牌游戏的服务端开发</li>
-                            <li>使用 C++ 和 Go 开发游戏逻辑服务器和网关服务</li>
-                            <li>实现玩家数据管理、背包系统、任务系统、排行榜等功能</li>
-                            <li>对接第三方SDK，实现支付、广告、数据统计等功能</li>
-                            <li>参与游戏运营活动开发，快速响应产品需求</li>
-                            <li>协助运维团队进行服务器部署和问题排查</li>
+                            <li>编写PVE压测工具，搭建Prometheus监控系统</li>
+                            <li>重构好友模块（分页 + 缓存），提高响应速度</li>
+                            <li>重构任务模块，提高可维护性和性能</li>
+                            <li>重构选角色逻辑，新增选皮肤功能</li>
                         </ul>
                         <h4>技术栈：</h4>
-                        <p class="tech-stack">C++, Go, MySQL, Redis, Protobuf, Docker, Nginx</p>
+                        <p class="tech-stack">Golang, MySQL, Redis, Unity3D, pprof, Prometheus</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>游戏服务器开发工程师</h3>
+                            <span class="company-name">上海英澈网络科技有限公司</span>
+                        </div>
+                        <div class="exp-date">2024.04 - 2024.10</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《千年之旅》- ARPG游戏（B站运营发行，已上线台湾服、韩服）</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>独立完成线上活动开发（拼图、每日Boss战、翻牌等）</li>
+                            <li>编写代码检查脚本，发现项目缺陷和优化点</li>
+                            <li>开发模拟客户端工具，提高测试效率</li>
+                            <li>使用pprof和go trace优化性能，解决协程分配问题</li>
+                        </ul>
+                        <h4>技术栈：</h4>
+                        <p class="tech-stack">Golang, Leaf框架, MySQL, Redis, etcd, Unity3D</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>全栈开发工程师/AWS运维</h3>
+                            <span class="company-name">上海途兔智能科技有限公司</span>
+                        </div>
+                        <div class="exp-date">2023.08 - 2024.02</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《途兔智能助手》CityWalk小程序 + 《CityWalk物语》AI休闲游戏</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>小程序前后端开发，接入AI大模型服务</li>
+                            <li>AWS运维（ECS、CI/CD、API网关、RDS、OpenSearch）</li>
+                            <li>实现3种大模型长轮询方案，改进RPC机制</li>
+                            <li>使用Qt开发AI对话NPC的休闲游戏</li>
+                            <li>网页爬虫开发，数据采集</li>
+                        </ul>
+                        <h4>技术栈：</h4>
+                        <p class="tech-stack">Golang, Vue, C++/Qt, Python, LLM, AWS, OpenSearch, RabbitMQ</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>游戏服务器开发工程师</h3>
+                            <span class="company-name">上海绿岸网络科技股份有限公司</span>
+                        </div>
+                        <div class="exp-date">2022.10 - 2023.08</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《守护者之森》- MMO微信游戏</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>任务系统（家族任务、历练任务、跑环任务）</li>
+                            <li>装备合成系统、装备排行榜</li>
+                            <li>泡点经验系统（挂机奖励）</li>
+                            <li>玉门战斗副本（玩家镜像挑战）</li>
+                            <li>战斗力计算、功能解锁系统</li>
+                        </ul>
+                        <h4>技术栈：</h4>
+                        <p class="tech-stack">Golang, MySQL, Redis, 状态机, 分布式架构</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>游戏服务器开发工程师</h3>
+                            <span class="company-name">上海淘米网络科技有限公司</span>
+                        </div>
+                        <div class="exp-date">2021.03 - 2022.09</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《摩尔庄园》- 千万日活、百万同时在线MMO手游（雷霆运营）⭐</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>活动玩法开发（品牌联动：女足、女排、草莓音乐节、神舟飞船等）</li>
+                            <li>昆虫系统开发（含全服广播）</li>
+                            <li>优化图鉴系统、通行证、天气系统</li>
+                            <li>数数科技SDK日志埋点</li>
+                            <li>参与台湾服上线，与4399合作</li>
+                        </ul>
+                        <h4>技术栈：</h4>
+                        <p class="tech-stack">Golang, MongoDB, Redis, Consul, NSQ, RPC, Unity3D, ELK</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>游戏服务器开发工程师</h3>
+                            <span class="company-name">武汉升鹏科技有限公司</span>
+                        </div>
+                        <div class="exp-date">2017.12 - 2021.03</div>
+                    </div>
+                    <div class="exp-content">
+                        <h4>项目：</h4>
+                        <p>《神奇精灵》- 宝可梦IP MMO（完整0-1项目经验）</p>
+                        <h4>主要职责：</h4>
+                        <ul>
+                            <li>宠物技能系统和养成玩法（升级、升阶、突破）</li>
+                            <li>聊天系统（组队、家族、阵营、私聊、世界、系统）</li>
+                            <li>任务模块（跑环、家族、阵营历练、头衔、成就）</li>
+                            <li>商城系统（神秘商店、家族商城、阵营商城）</li>
+                            <li>活动系统（夺宝、任务、签到）</li>
+                        </ul>
+                        <h4>技术栈：</h4>
+                        <p class="tech-stack">Golang, C# Orleans, Lua, Openresty, SQLite, Redis, Unity3D</p>
                     </div>
                 </div>
 
@@ -361,12 +480,25 @@ permalink: /resume/
                     <div class="edu-header">
                         <div class="edu-title">
                             <h3>计算机科学与技术 · 本科</h3>
-                            <span class="school-name">某大学</span>
+                            <span class="school-name">武汉工商学院</span>
                         </div>
-                        <div class="edu-date">2015.09 - 2019.06</div>
+                        <div class="edu-date">2015.09 - 2017.06</div>
                     </div>
                     <div class="edu-content">
                         <p>主修课程：数据结构与算法、计算机网络、操作系统、数据库原理、软件工程</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-header">
+                        <div class="edu-title">
+                            <h3>计算机应用技术 · 大专</h3>
+                            <span class="school-name">武汉科技大学</span>
+                        </div>
+                        <div class="edu-date">2012.09 - 2015.09</div>
+                    </div>
+                    <div class="edu-content">
+                        <p>计算机应用技术专业</p>
                     </div>
                 </div>
             </div>
@@ -379,12 +511,16 @@ permalink: /resume/
             </h2>
             <div class="section-content">
                 <ul class="evaluation-list">
-                    <li><strong>技术热情：</strong>对游戏开发和新技术充满热情，持续学习提升，关注行业前沿动态</li>
-                    <li><strong>架构能力：</strong>具备扎实的计算机基础和系统架构能力，能够设计高性能、高可用的分布式系统</li>
-                    <li><strong>工程实践：</strong>注重代码质量和工程规范，编写可维护、可测试的代码</li>
-                    <li><strong>团队协作：</strong>良好的沟通能力和团队协作精神，乐于分享技术经验</li>
-                    <li><strong>问题解决：</strong>快速定位和解决复杂技术问题，具备独立攻关能力</li>
-                    <li><strong>开源精神：</strong>积极参与开源社区，贡献代码，帮助他人成长</li>
+                    <li><strong>问题解决：</strong>高效定位和解决复杂技术问题能力</li>
+                    <li><strong>高并发项目：</strong>参与过千万日活+百万同时在线的摩尔庄园项目（高并发、高性能）</li>
+                    <li><strong>全栈能力：</strong>具备游戏全栈开发能力（偏服务器），Unity3D客户端开发经验</li>
+                    <li><strong>帧同步：</strong>有游戏服务器帧同步开发经验</li>
+                    <li><strong>运营经验：</strong>丰富线上开发维护经验，熟悉游戏开发生命周期和迭代节奏</li>
+                    <li><strong>出海项目：</strong>有出海项目经验（台湾服、韩服）和0-1项目经验</li>
+                    <li><strong>架构设计：</strong>熟悉MMO、RPG类型游戏服务器架构设计，具备架构设计能力</li>
+                    <li><strong>Web开发：</strong>具备Web全栈开发能力（偏后端），熟悉微服务、MVC、DDD架构</li>
+                    <li><strong>开源贡献：</strong>GitHub有游戏服务器框架（分布式、微服务、Actor模型、云原生）</li>
+                    <li><strong>区块链：</strong>熟悉区块链技术（Sui Move、Solana、Anchor），有MMO游戏+区块链融合经验</li>
                 </ul>
             </div>
         </section>
