@@ -1,0 +1,595 @@
+---
+layout: post
+title: "Lua 编程语言学习总结"
+date: 2025-12-17
+categories: [Programming, Lua]
+---
+
+# Lua 编程语言学习总结
+
+## 1. Lua 简介
+
+Lua 是一种轻量级、高效的脚本语言，由巴西里约热内卢天主教大学于 1993 年开发。
+
+### 特点
+
+- **轻量级**：核心代码量小，易于嵌入到其他应用中
+- **高效**：执行速度快，是最快的脚本语言之一
+- **可扩展**：易于与 C/C++ 交互
+- **跨平台**：可在多种平台运行
+- **应用广泛**：游戏开发（如魔兽世界）、OpenResty、Redis 等
+
+## 2. 基础语法
+
+### 2.1 变量与数据类型
+
+```lua
+-- 注释使用 --
+--[[
+  多行注释
+  使用双中括号
+]]
+
+-- 基本数据类型
+local str = "Hello, Lua"        -- 字符串
+local num = 42                  -- 数字
+local bool_val = true           -- 布尔值
+local nothing = nil             -- nil 空值
+
+-- Lua 只有 table 这一种复合数据结构
+local arr = {1, 2, 3, 4, 5}     -- 数组（索引从1开始）
+local dict = {name = "John", age = 30}  -- 字典
+```
+
+### 2.2 运算符
+
+```lua
+-- 算术运算符
+local a = 10 + 5    -- 加
+local b = 10 - 5    -- 减
+local c = 10 * 5    -- 乘
+local d = 10 / 5    -- 除
+local e = 10 % 3    -- 取模
+local f = 10 ^ 2    -- 幂运算
+
+-- 关系运算符
+-- ==, ~=, <, >, <=, >=
+
+-- 逻辑运算符
+-- and, or, not
+
+-- 字符串连接
+local full_name = "John" .. " " .. "Doe"
+```
+
+### 2.3 控制结构
+
+```lua
+-- if 语句
+if condition then
+    -- 代码
+elseif another_condition then
+    -- 代码
+else
+    -- 代码
+end
+
+-- while 循环
+local i = 1
+while i <= 5 do
+    print(i)
+    i = i + 1
+end
+
+-- repeat-until 循环
+local j = 1
+repeat
+    print(j)
+    j = j + 1
+until j > 5
+
+-- for 循环
+for i = 1, 10, 2 do  -- 起始值, 结束值, 步长
+    print(i)
+end
+
+-- 遍历数组
+local arr = {10, 20, 30, 40}
+for i, v in ipairs(arr) do
+    print(i, v)
+end
+
+-- 遍历字典
+local dict = {name = "Alice", age = 25}
+for k, v in pairs(dict) do
+    print(k, v)
+end
+```
+
+## 3. 函数
+
+### 3.1 函数定义
+
+```lua
+-- 基本函数
+function greet(name)
+    return "Hello, " .. name
+end
+
+-- 局部函数
+local function add(a, b)
+    return a + b
+end
+
+-- 匿名函数
+local multiply = function(a, b)
+    return a * b
+end
+
+-- 多返回值
+function get_info()
+    return "John", 30, "Engineer"
+end
+
+local name, age, job = get_info()
+```
+
+### 3.2 可变参数
+
+```lua
+function sum(...)
+    local args = {...}
+    local total = 0
+    for _, v in ipairs(args) do
+        total = total + v
+    end
+    return total
+end
+
+print(sum(1, 2, 3, 4, 5))  -- 15
+```
+
+### 3.3 闭包
+
+```lua
+function counter()
+    local count = 0
+    return function()
+        count = count + 1
+        return count
+    end
+end
+
+local c = counter()
+print(c())  -- 1
+print(c())  -- 2
+print(c())  -- 3
+```
+
+## 4. Table 表
+
+Table 是 Lua 中最强大的数据结构。
+
+### 4.1 数组操作
+
+```lua
+local fruits = {"apple", "banana", "orange"}
+
+-- 访问元素（索引从1开始）
+print(fruits[1])  -- apple
+
+-- 添加元素
+table.insert(fruits, "grape")
+table.insert(fruits, 2, "mango")  -- 在指定位置插入
+
+-- 删除元素
+table.remove(fruits)      -- 删除最后一个
+table.remove(fruits, 2)   -- 删除指定位置
+
+-- 获取长度
+print(#fruits)
+```
+
+### 4.2 字典操作
+
+```lua
+local person = {
+    name = "Alice",
+    age = 28,
+    city = "Beijing"
+}
+
+-- 访问属性
+print(person.name)
+print(person["age"])
+
+-- 添加/修改属性
+person.job = "Developer"
+person["salary"] = 10000
+
+-- 删除属性
+person.city = nil
+```
+
+### 4.3 Table 常用函数
+
+```lua
+-- 连接数组元素
+local arr = {"a", "b", "c"}
+print(table.concat(arr, ", "))  -- a, b, c
+
+-- 排序
+local numbers = {3, 1, 4, 1, 5, 9}
+table.sort(numbers)
+
+-- 自定义排序
+table.sort(numbers, function(a, b) return a > b end)
+```
+
+## 5. 字符串处理
+
+```lua
+local str = "Hello, Lua Programming"
+
+-- 字符串长度
+print(#str)
+print(string.len(str))
+
+-- 大小写转换
+print(string.upper(str))
+print(string.lower(str))
+
+-- 子串
+print(string.sub(str, 1, 5))   -- Hello
+
+-- 查找
+local pos = string.find(str, "Lua")
+print(pos)  -- 8
+
+-- 替换
+local new_str = string.gsub(str, "Lua", "Python")
+
+-- 分割字符串
+function split(str, delimiter)
+    local result = {}
+    for match in (str..delimiter):gmatch("(.-)"..delimiter) do
+        table.insert(result, match)
+    end
+    return result
+end
+
+-- 格式化
+local formatted = string.format("Name: %s, Age: %d", "Bob", 25)
+```
+
+## 6. 模块与包
+
+### 6.1 创建模块
+
+```lua
+-- mymodule.lua
+local M = {}
+
+M.version = "1.0"
+
+function M.greet(name)
+    return "Hello, " .. name
+end
+
+function M.add(a, b)
+    return a + b
+end
+
+return M
+```
+
+### 6.2 使用模块
+
+```lua
+local mymodule = require("mymodule")
+
+print(mymodule.version)
+print(mymodule.greet("Alice"))
+print(mymodule.add(10, 20))
+```
+
+## 7. 面向对象编程
+
+Lua 没有内置的类系统，但可以通过 table 和 metatable 实现。
+
+```lua
+-- 定义类
+local Person = {}
+Person.__index = Person
+
+function Person:new(name, age)
+    local obj = setmetatable({}, Person)
+    obj.name = name
+    obj.age = age
+    return obj
+end
+
+function Person:introduce()
+    return string.format("I'm %s, %d years old", self.name, self.age)
+end
+
+-- 使用类
+local p1 = Person:new("Alice", 25)
+print(p1:introduce())
+
+-- 继承
+local Student = setmetatable({}, {__index = Person})
+Student.__index = Student
+
+function Student:new(name, age, school)
+    local obj = Person:new(name, age)
+    setmetatable(obj, Student)
+    obj.school = school
+    return obj
+end
+
+function Student:introduce()
+    return Person.introduce(self) .. " at " .. self.school
+end
+
+local s1 = Student:new("Bob", 20, "Tsinghua")
+print(s1:introduce())
+```
+
+## 8. 元表 (Metatable)
+
+元表允许改变 table 的行为。
+
+```lua
+local t = {1, 2, 3}
+local mt = {
+    __add = function(t1, t2)
+        local result = {}
+        for i = 1, math.max(#t1, #t2) do
+            result[i] = (t1[i] or 0) + (t2[i] or 0)
+        end
+        return result
+    end,
+
+    __tostring = function(t)
+        return "[" .. table.concat(t, ", ") .. "]"
+    end,
+
+    __index = function(t, key)
+        return "Key not found: " .. key
+    end
+}
+
+setmetatable(t, mt)
+
+local t2 = {4, 5, 6}
+setmetatable(t2, mt)
+
+local t3 = t + t2  -- 使用 __add
+print(t3)  -- 使用 __tostring
+```
+
+## 9. 协程 (Coroutine)
+
+```lua
+-- 创建协程
+local co = coroutine.create(function()
+    for i = 1, 5 do
+        print("Coroutine iteration: " .. i)
+        coroutine.yield()
+    end
+end)
+
+-- 执行协程
+while coroutine.status(co) ~= "dead" do
+    coroutine.resume(co)
+end
+
+-- 协程通信
+local producer = coroutine.create(function()
+    for i = 1, 5 do
+        coroutine.yield(i * 10)
+    end
+end)
+
+local consumer = function()
+    while true do
+        local status, value = coroutine.resume(producer)
+        if not status or value == nil then break end
+        print("Received: " .. value)
+    end
+end
+
+consumer()
+```
+
+## 10. 错误处理
+
+```lua
+-- pcall (protected call)
+local status, result = pcall(function()
+    -- 可能出错的代码
+    return 10 / 0
+end)
+
+if status then
+    print("Success: " .. result)
+else
+    print("Error: " .. result)
+end
+
+-- 自定义错误
+function divide(a, b)
+    if b == 0 then
+        error("Division by zero!")
+    end
+    return a / b
+end
+
+local status, result = pcall(divide, 10, 0)
+if not status then
+    print("Caught error: " .. result)
+end
+
+-- assert
+local function validate_age(age)
+    assert(age >= 0 and age <= 150, "Invalid age")
+    return age
+end
+```
+
+## 11. 文件 I/O
+
+```lua
+-- 读取文件
+local file = io.open("test.txt", "r")
+if file then
+    local content = file:read("*all")
+    print(content)
+    file:close()
+end
+
+-- 写入文件
+local file = io.open("output.txt", "w")
+if file then
+    file:write("Hello, Lua!\n")
+    file:write("This is a test.\n")
+    file:close()
+end
+
+-- 逐行读取
+for line in io.lines("test.txt") do
+    print(line)
+end
+```
+
+## 12. 实用技巧
+
+### 12.1 三元运算符模拟
+
+```lua
+local result = condition and true_value or false_value
+```
+
+### 12.2 默认值设置
+
+```lua
+local value = input or default_value
+```
+
+### 12.3 Table 深拷贝
+
+```lua
+function deepcopy(orig)
+    local copy
+    if type(orig) == 'table' then
+        copy = {}
+        for k, v in next, orig, nil do
+            copy[deepcopy(k)] = deepcopy(v)
+        end
+        setmetatable(copy, deepcopy(getmetatable(orig)))
+    else
+        copy = orig
+    end
+    return copy
+end
+```
+
+### 12.4 Table 序列化
+
+```lua
+function serialize(t)
+    local result = {}
+    for k, v in pairs(t) do
+        local key = type(k) == "string" and string.format("%q", k) or tostring(k)
+        local value = type(v) == "string" and string.format("%q", v) or tostring(v)
+        table.insert(result, string.format("[%s] = %s", key, value))
+    end
+    return "{" .. table.concat(result, ", ") .. "}"
+end
+```
+
+## 13. 常见应用场景
+
+### 13.1 配置文件
+
+```lua
+-- config.lua
+return {
+    server = {
+        host = "localhost",
+        port = 8080,
+        timeout = 30
+    },
+    database = {
+        host = "localhost",
+        port = 3306,
+        name = "mydb"
+    }
+}
+
+-- 使用
+local config = require("config")
+print(config.server.port)
+```
+
+### 13.2 游戏开发
+
+Lua 广泛应用于游戏脚本：
+
+- 魔兽世界插件
+- Roblox 游戏开发
+- Love2D 游戏引擎
+
+### 13.3 Web 开发 (OpenResty)
+
+```lua
+-- Nginx + Lua
+local cjson = require "cjson"
+
+ngx.say(cjson.encode({
+    message = "Hello from OpenResty",
+    timestamp = ngx.now()
+}))
+```
+
+## 14. 性能优化建议
+
+1. **使用局部变量**：局部变量访问比全局变量快
+2. **缓存 table 查找**：频繁访问的字段应缓存
+3. **避免在循环中创建函数**
+4. **使用 table.concat 代替字符串连接**（大量字符串时）
+5. **预分配 table 大小**：减少 rehash
+
+```lua
+-- 好的做法
+local t = {}
+for i = 1, 1000000 do
+    t[i] = i
+end
+
+-- 更好的做法（预分配）
+local t = table.new(1000000, 0)  -- LuaJIT
+for i = 1, 1000000 do
+    t[i] = i
+end
+```
+
+## 15. 学习资源
+
+- **官方网站**：[www.lua.org](https://www.lua.org)
+- **在线教程**：Learn Lua in Y Minutes
+- **书籍**：《Programming in Lua》
+- **实践项目**：OpenResty, Love2D
+- **社区**：Lua-users wiki
+
+## 总结
+
+Lua 是一门简洁而强大的语言，特别适合：
+
+- 嵌入式脚本
+- 游戏开发
+- 高性能 Web 应用（OpenResty）
+- 配置文件
+
+掌握 Lua 的关键是理解 table 的灵活使用、元表机制和协程。通过实际项目练习，可以快速提升 Lua 编程能力。
