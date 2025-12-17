@@ -48,7 +48,7 @@ permalink: /resume/
             </h2>
             <div class="section-content">
                 <p class="summary-text">
-                    资深游戏服务器开发工程师，拥有<strong>7年+</strong>游戏后端开发经验，精通 <strong>Golang</strong> 和 <strong>C++</strong>，
+                    资深游戏服务器开发工程师，拥有<strong>8年+</strong>游戏后端开发经验
                     擅长大规模MMO游戏服务器架构设计与开发。参与过千万日活、百万同时在线的爆款游戏项目（摩尔庄园），
                     具备完整的游戏服务端研发能力和高并发、高性能系统实战经验。
                 </p>
