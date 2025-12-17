@@ -137,12 +137,6 @@ permalink: /resume/
                         </div>
                     </div>
                 </div>
-                
-                <div class="skill-legend">
-                    <span><span class="legend-dot expert"></span> 精通</span>
-                    <span><span class="legend-dot proficient"></span> 熟练</span>
-                    <span><span class="legend-dot familiar"></span> 了解</span>
-                </div>
             </div>
         </section>
 

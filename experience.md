@@ -332,22 +332,6 @@ permalink: /experience/
     </div>
 
     <!-- 技能总结 -->
-                            <span class="tech-tag">Go</span>
-                            <span class="tech-tag">Actor模型</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">NATS</span>
-                            <span class="tech-tag">gRPC</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    <!-- 技能总结 -->
     <section class="skills-summary">
         <h2 class="section-title">
             <i class="fas fa-code"></i> 技能总结
@@ -384,39 +368,6 @@ permalink: /experience/
                     <span class="skill-item">HTTP/REST</span>
                     <span class="skill-item">KCP</span>
                     <span class="skill-item">Protobuf</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-database"></i> 数据库与中间件</h3>
-                <div class="skill-items">
-                    <span class="skill-item">MongoDB</span>
-                    <span class="skill-item">Redis</span>
-                    <span class="skill-item">PostgreSQL</span>
-                    <span class="skill-item">MySQL</span>
-                    <span class="skill-item">NATS</span>
-                    <span class="skill-item">Elasticsearch</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-tools"></i> DevOps与工具</h3>
-                <div class="skill-items">
-                    <span class="skill-item">Docker</span>
-                    <span class="skill-item">Kubernetes</span>
-                    <span class="skill-item">Git</span>
-                    <span class="skill-item">GitHub Actions</span>
-                    <span class="skill-item">CI/CD</span>
-                    <span class="skill-item">Prometheus</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-link"></i> 区块链</h3>
-                <div class="skill-items">
-                    <span class="skill-item">Sui Move</span>
-                    <span class="skill-item">智能合约</span>
-                    <span class="skill-item">Web3</span>
-                    <span class="skill-item">GameFi</span>
-                    <span class="skill-item">DApp</span>
-                    <span class="skill-item">ERC-4337</span>
                 </div>
             </div>
         </div>
