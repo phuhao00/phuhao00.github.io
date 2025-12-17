@@ -197,6 +197,34 @@ document.addEventListener('DOMContentLoaded', function() {
         
         lastScroll = currentScroll;
     });
+    
+    // ========== 疯狂动物城角色背景 ==========
+    if (window.innerWidth > 768) {
+        // 创建角色元素
+        const characters = [
+            { class: 'character-judy-left', delay: 0 },
+            { class: 'character-judy-bottom', delay: 200 },
+            { class: 'character-nick-right', delay: 400 },
+            { class: 'character-sloth-right', delay: 600 },
+            { class: 'character-top-left', delay: 800 },
+            { class: 'character-top-right', delay: 1000 }
+        ];
+        
+        characters.forEach(char => {
+            setTimeout(() => {
+                const character = document.createElement('div');
+                character.className = `zootopia-character ${char.class}`;
+                document.body.appendChild(character);
+                
+                // 添加视差滚动效果
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const speed = char.class.includes('left') ? 0.3 : 0.2;
+                    character.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            }, char.delay);
+        });
+    }
 });
 
 // ========== 页面加载进度条 ==========
