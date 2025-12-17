@@ -514,7 +514,274 @@ body {
     }
 }
 
-/* ========== 动画效果 ========== */
+/* ========== 现代化动画效果 ========== */
+
+/* 页面加载动画 */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* 滚动淡入动画 */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-element.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 卡片3D效果 */
+.post-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 页面进度条 */
+.page-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--link-color), var(--success-color));
+    z-index: 9999;
+    transition: width 0.3s ease;
+}
+
+/* 自定义光标 */
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--link-color);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+    opacity: 0.5;
+}
+
+.custom-cursor.hover {
+    width: 60px;
+    height: 60px;
+    border-color: var(--success-color);
+    opacity: 0.8;
+}
+
+.custom-cursor-dot {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: var(--link-color);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-cursor-dot.hover {
+    width: 10px;
+    height: 10px;
+    background: var(--success-color);
+}
+
+/* 隐藏默认光标 */
+body, a, button {
+    cursor: none !important;
+}
+
+/* 导航栏滚动效果 */
+.site-header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(13, 17, 23, 0.95);
+}
+
+/* 代码块复制按钮 */
+.copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--hover-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+pre:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background: var(--border-color);
+    color: var(--link-color);
+    transform: scale(1.05);
+}
+
+.copy-button.copied {
+    background: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
+/* 打字机光标效果 */
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.hero h1 {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero h1::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    animation: blink 1s infinite;
+}
+
+/* 悬浮动画 */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* 渐变文字效果 */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.site-title {
+    background: linear-gradient(90deg, var(--link-color), var(--success-color), var(--link-color));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* 脉冲效果 */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 166, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 166, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(88, 166, 255, 0);
+    }
+}
+
+.back-to-top.show {
+    animation: pulse 2s infinite;
+}
+
+/* 波纹效果 */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.post-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: var(--link-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.post-card:active::after {
+    animation: ripple 0.6s ease-out;
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 加载骨架屏效果 */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--surface-color) 0%,
+        var(--hover-bg) 50%,
+        var(--surface-color) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* 响应式 - 移动端禁用自定义光标 */
+@media (max-width: 768px) {
+    .custom-cursor,
+    .custom-cursor-dot {
+        display: none;
+    }
+    
+    body, a, button {
+        cursor: auto !important;
+    }
+    
+    .post-card {
+        transform: none !important;
+    }
+}
+
+/* 老式动画保留 */
 @keyframes fadeIn {
     from {
         opacity: 0;
