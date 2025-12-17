@@ -1,0 +1,52 @@
+# 网站设置
+title: Phuhao's Tech Blog
+description: 记录技术成长的点点滴滴
+author: Phuhao
+email: your.email@example.com
+url: "https://phuhao00.github.io"
+baseurl: ""
+
+# 构建设置
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 导航菜单
+header_pages:
+  - index.md
+  - about.md
+  - archive.md
+
+# 社交链接
+github_username: phuhao00
+
+# 分页
+paginate: 10
+paginate_path: "/page:num/"
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Phuhao"
+
+# 语法高亮
+highlighter: rouge
+
+# 时区
+timezone: Asia/Shanghai

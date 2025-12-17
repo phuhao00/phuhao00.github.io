@@ -1,0 +1,31 @@
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ '/' | relative_url }}" class="site-title">
+            <i class="fas fa-code"></i> {{ site.title }}
+        </a>
+        <nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger">
+            <label for="nav-trigger" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-links">
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+                    <i class="fas fa-home"></i> 首页
+                </a>
+                <a href="{{ '/archive' | relative_url }}" {% if page.url contains 'archive' %}class="active"{% endif %}>
+                    <i class="fas fa-archive"></i> 归档
+                </a>
+                <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>
+                    <i class="fas fa-user"></i> 关于
+                </a>
+                {% if site.github_username %}
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+</header>
