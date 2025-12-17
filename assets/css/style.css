@@ -1,16 +1,20 @@
-/* ========== 全局变量 ========== */
+/* ========== 全局变量 - GitHub Night Theme ========== */
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #f093fb;
-    --bg-color: #0f0f1e;
-    --surface-color: #1a1a2e;
-    --text-color: #e0e0e0;
-    --text-secondary: #a0a0a0;
-    --border-color: #2a2a3e;
-    --code-bg: #16213e;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --primary-color: #58a6ff;
+    --secondary-color: #1f6feb;
+    --accent-color: #238636;
+    --bg-color: #0d1117;
+    --surface-color: #161b22;
+    --text-color: #c9d1d9;
+    --text-secondary: #8b949e;
+    --border-color: #30363d;
+    --code-bg: #161b22;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    --gradient: linear-gradient(135deg, #1f6feb, #238636);
+    --hover-bg: #21262d;
+    --link-color: #58a6ff;
+    --success-color: #3fb950;
+    --warning-color: #d29922;
 }
 
 /* ========== 基础样式 ========== */
@@ -44,9 +48,9 @@ body {
 
 /* ========== 头部样式 ========== */
 .site-header {
-    background: var(--surface-color);
-    border-bottom: 2px solid var(--border-color);
-    padding: 1.5rem 0;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -66,15 +70,12 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    transition: transform 0.3s ease;
+    color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 .site-title:hover {
-    transform: scale(1.05);
+    color: var(--link-color);
 }
 
 .site-nav .nav-links {
@@ -87,13 +88,14 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 6px;
+    font-size: 0.95rem;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-    background: var(--gradient);
-    color: white;
+    background: var(--hover-bg);
+    color: var(--link-color);
     transform: translateY(-2px);
 }
 
@@ -149,8 +151,9 @@ body {
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: var(--gradient);
-    border-radius: 20px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
     margin-bottom: 3rem;
     box-shadow: var(--shadow);
 }
@@ -158,12 +161,13 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .hero p {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-secondary);
 }
 
 .posts-list {
@@ -173,7 +177,7 @@ body {
 
 .post-card {
     background: var(--surface-color);
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 2rem;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
@@ -187,15 +191,16 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: var(--gradient);
+    height: 3px;
+    background: var(--link-color);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .post-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow);
+    border-color: var(--link-color);
 }
 
 .post-card:hover::before {
@@ -204,12 +209,17 @@ body {
 
 .post-card h2 {
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .post-card h2 a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.post-card h2 a:hover {
+    color: var(--link-color);
 }
 
 .post-card h2 a:hover {
@@ -233,13 +243,13 @@ body {
 }
 
 .post-meta i {
-    color: var(--primary-color);
+    color: var(--text-secondary);
 }
 
 /* ========== 文章页面样式 ========== */
 .post {
     background: var(--surface-color);
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 3rem;
     border: 1px solid var(--border-color);
 }
@@ -247,16 +257,14 @@ body {
 .post-header {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .post-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .post-content {
@@ -288,31 +296,33 @@ body {
 }
 
 .post-content a {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease;
 }
 
 .post-content a:hover {
-    border-bottom-color: var(--primary-color);
+    border-bottom-color: var(--link-color);
 }
 
 .post-content code {
     background: var(--code-bg);
     padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 6px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 0.9em;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
 }
 
 .post-content pre {
     background: var(--code-bg);
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow-x: auto;
     margin: 1.5rem 0;
-    border-left: 4px solid var(--primary-color);
+    border: 1px solid var(--border-color);
 }
 
 .post-content pre code {
@@ -321,11 +331,13 @@ body {
 }
 
 .post-content blockquote {
-    border-left: 4px solid var(--primary-color);
+    border-left: 3px solid var(--link-color);
     padding-left: 1.5rem;
     margin: 1.5rem 0;
     color: var(--text-secondary);
-    font-style: italic;
+    background: var(--hover-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
 }
 
 .post-content img {
@@ -358,11 +370,12 @@ body {
 }
 
 .tag {
-    background: var(--gradient);
-    color: white;
+    background: var(--hover-bg);
+    color: var(--link-color);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
+    border: 1px solid var(--border-color);
 }
 
 /* ========== 文章导航 ========== */
@@ -387,7 +400,8 @@ body {
 .post-navigation a:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow);
-    border-color: var(--primary-color);
+    border-color: var(--link-color);
+    background: var(--hover-bg);
 }
 
 .prev-post {
@@ -432,7 +446,7 @@ body {
 }
 
 .footer-social a:hover {
-    color: var(--primary-color);
+    color: var(--link-color);
     transform: scale(1.2);
 }
 
@@ -441,8 +455,9 @@ body {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: var(--gradient);
-    color: white;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -461,6 +476,9 @@ body {
 
 .back-to-top:hover {
     transform: translateY(-5px);
+    background: var(--hover-bg);
+    border-color: var(--link-color);
+    color: var(--link-color);
 }
 
 /* ========== 响应式设计 ========== */
