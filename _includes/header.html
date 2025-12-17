@@ -11,13 +11,18 @@
                 <span></span>
             </label>
             <div class="nav-links">
-                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+                <a href="{{ '/' | relative_url }}" {% if page.url=='/' %}class="active" {% endif %}>
                     <i class="fas fa-home"></i> 首页
                 </a>
-                <a href="{{ '/archive' | relative_url }}" {% if page.url contains 'archive' %}class="active"{% endif %}>
+                <a href="{{ '/archive' | relative_url }}" {% if page.url contains 'archive' %}class="active" {% endif
+                    %}>
                     <i class="fas fa-archive"></i> 归档
                 </a>
-                <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>
+                <a href="{{ '/portfolio' | relative_url }}" {% if page.url contains 'portfolio' %}class="active" {%
+                    endif %}>
+                    <i class="fas fa-images"></i> 作品集
+                </a>
+                <a href="{{ '/about' | relative_url }}" {% if page.url contains 'about' %}class="active" {% endif %}>
                     <i class="fas fa-user"></i> 关于
                 </a>
                 {% if site.github_username %}
