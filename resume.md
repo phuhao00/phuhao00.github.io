@@ -16,8 +16,8 @@ permalink: /resume/
         </div>
         <div class="resume-contact">
             <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <a href="tel:18186224595">18186224595</a>
+                <i class="fab fa-weixin"></i>
+                <span>phuhao2012</span>
             </div>
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
