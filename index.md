@@ -8,6 +8,26 @@ title: 首页
     <p>需要耐心一点</p>
 </div>
 
+<section class="portfolio-section">
+    <h2 class="section-title">
+        <i class="fas fa-film"></i> 项目作品录屏
+    </h2>
+    <div class="video-gallery">
+        <div class="video-item">
+            <div class="video-wrapper">
+                <video controls preload="metadata" playsinline>
+                    <source src="{{ '/assets/video/Feishu20260320-223627.mp4' | relative_url }}" type="video/mp4">
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+            <div class="video-caption">
+                <h3>AI Media Agent 项目演示</h3>
+                <p>项目实际操作录屏，展示内容生成、素材生产与自动化发布流程。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="posts-list">
     {% for post in site.posts %}
     <article class="post-card">

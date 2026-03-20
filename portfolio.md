@@ -51,11 +51,11 @@ permalink: /portfolio/
         <div class="video-gallery">
             <div class="video-item">
                 <div class="video-wrapper">
-                    <iframe src="//player.bilibili.com/player.html?aid=113587078633&bvid=BV1z5bKzuERK&cid=500001645037607&page=1" 
-                            scrolling="no" 
-                            border="0" 
-                            frameborder="no" 
-                            framespacing="0" 
+                    <iframe src="https://player.bilibili.com/player.html?aid=115004762365875&bvid=BV1z5bKzuERK&cid=31609392126&page=1"
+                            scrolling="no"
+                            border="0"
+                            frameborder="no"
+                            framespacing="0"
                             allowfullscreen="true"
                             style="width: 100%; height: 100%; position: absolute; left: 0; top: 0;">
                     </iframe>
@@ -67,11 +67,11 @@ permalink: /portfolio/
             </div>
             <div class="video-item">
                 <div class="video-wrapper">
-                    <iframe src="//player.bilibili.com/player.html?aid=113587227161&bvid=BV1EZFxeFEYJ&cid=500001794149819&page=1" 
-                            scrolling="no" 
-                            border="0" 
-                            frameborder="no" 
-                            framespacing="0" 
+                    <iframe src="https://player.bilibili.com/player.html?aid=113905938470048&bvid=BV1EZFxeFEYJ&cid=28123791925&page=1"
+                            scrolling="no"
+                            border="0"
+                            frameborder="no"
+                            framespacing="0"
                             allowfullscreen="true"
                             style="width: 100%; height: 100%; position: absolute; left: 0; top: 0;">
                     </iframe>
@@ -117,7 +117,7 @@ permalink: /portfolio/
                     </div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <div class="project-thumbnail">
                     <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
@@ -201,4 +201,5 @@ permalink: /portfolio/
             </div>
         </div>
     </section>
+
 </div>
