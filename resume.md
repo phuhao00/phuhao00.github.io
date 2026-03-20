@@ -40,7 +40,7 @@ permalink: /resume/
     </header>
 
     <div class="resume-content">
-        
+
         <!-- 个人简介 -->
         <section class="resume-section">
             <h2 class="section-title">
@@ -77,7 +77,7 @@ permalink: /resume/
                             <span class="skill-tag level-familiar">Move</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-group">
                         <h3><i class="fas fa-server"></i> 游戏服务器</h3>
                         <div class="skill-tags">
@@ -89,7 +89,7 @@ permalink: /resume/
                             <span class="skill-tag level-proficient">DDD领域驱动</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-group">
                         <h3><i class="fas fa-network-wired"></i> 网络协议</h3>
                         <div class="skill-tags">
@@ -101,7 +101,7 @@ permalink: /resume/
                             <span class="skill-tag level-familiar">QUIC</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-group">
                         <h3><i class="fas fa-database"></i> 数据库与中间件</h3>
                         <div class="skill-tags">
@@ -113,7 +113,7 @@ permalink: /resume/
                             <span class="skill-tag level-familiar">Kafka</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-group">
                         <h3><i class="fas fa-tools"></i> 开发工具</h3>
                         <div class="skill-tags">
@@ -125,7 +125,7 @@ permalink: /resume/
                             <span class="skill-tag level-familiar">Prometheus</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-group">
                         <h3><i class="fas fa-cubes"></i> 区块链</h3>
                         <div class="skill-tags">
@@ -146,7 +146,7 @@ permalink: /resume/
                 <i class="fas fa-briefcase"></i> 工作经历
             </h2>
             <div class="section-content">
-                
+
                 <div class="experience-item">
                     <div class="exp-header">
                         <div class="exp-title">
@@ -317,7 +317,37 @@ permalink: /resume/
                 <i class="fas fa-project-diagram"></i> 项目经验
             </h2>
             <div class="section-content">
-                
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>
+                            <i class="fas fa-robot"></i> AI Media Agent（AI应用开发实践）
+                        </h3>
+                        <span class="project-tag">AI自动化</span>
+                    </div>
+                    <div class="project-meta">
+                        <span><i class="fas fa-calendar"></i> 2025.12 - 至今</span>
+                        <span><i class="fas fa-users"></i> 独立开发</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-desc">
+                            面向内容团队打造“少干活、多产出”的AI运营助手，自动完成文案创作、图视频生成、热点跟进与多平台发布，
+                            将内容从创作到分发流程压缩到分钟级，整体节省约80%人力时间。
+                        </p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>支持小红书、抖音、微博、公众号等多平台文案自动生成与风格适配</li>
+                            <li>实现脚本到成片的自动化视频生产链路（配图、配音、字幕、合成）</li>
+                            <li>接入Steam、TapTap热榜，定时追踪热点并自动产出内容</li>
+                            <li>实现小红书、抖音、B站、微博、YouTube、Twitter/X一键分发</li>
+                            <li>增加内容合规审核与私有知识库引用，保障账号安全和品牌一致性</li>
+                        </ul>
+                        <p class="project-tech">
+                            <strong>技术栈：</strong>Go, Python, Vue, LLM Agent, RAG, Docker, MySQL, Redis
+                        </p>
+                    </div>
+                </div>
+
                 <div class="project-item">
                     <div class="project-header">
                         <h3>
@@ -430,4 +460,5 @@ permalink: /resume/
         </section>
 
     </div>
+
 </div>

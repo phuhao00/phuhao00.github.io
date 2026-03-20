@@ -15,7 +15,52 @@ permalink: /experience/
 
     <!-- 时间线布局 -->
     <div class="timeline">
-        
+
+        <!-- 项目经历 0 -->
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i> 2025.12 - 至今
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h2>
+                            <i class="fas fa-robot"></i> AI Media Agent - AI应用开发实践
+                        </h2>
+                        <span class="role-badge">AI应用开发</span>
+                    </div>
+                    <div class="company-info">
+                        <i class="fas fa-building"></i> 个人项目 / 内容运营自动化
+                    </div>
+                    <div class="experience-description">
+                        <p>构建一个帮助内容团队“少干活、多产出”的 AI 智能助手系统，覆盖文案生成、图视频生产、热点追踪和多平台分发全流程，整体节省约80%运营人力时间。</p>
+                        <h4>核心成果：</h4>
+                        <ul>
+                            <li>实现多平台文案一键生成（小红书、抖音、微博、公众号），支持多标题版本A/B选择</li>
+                            <li>打通图文与视频自动化链路：脚本生成、配图、配音、字幕、合成与智能混剪</li>
+                            <li>接入Steam、TapTap等热榜数据源，定时生成热点内容并自动发布</li>
+                            <li>实现全平台发布编排（小红书、抖音、B站、微博、YouTube、Twitter/X）与定时任务</li>
+                            <li>增加发布前内容安全审核与私有知识库约束，确保合规与品牌一致性</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-tools"></i> 技术栈：</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Vue</span>
+                            <span class="tech-tag">LLM Agent</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 项目经历 1 -->
         <div class="timeline-item">
             <div class="timeline-marker"></div>
