@@ -42,6 +42,7 @@ permalink: /experience/
                             <li>接入Steam、TapTap等热榜数据源，定时生成热点内容并自动发布</li>
                             <li>实现全平台发布编排（小红书、抖音、B站、微博、YouTube、Twitter/X）与定时任务</li>
                             <li>增加发布前内容安全审核与私有知识库约束，确保合规与品牌一致性</li>
+                            <li>熟练使用Claude Code、Codex、Cursor、VS Code Copilot、Kimi Code提升AI应用研发效率</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
@@ -55,6 +56,11 @@ permalink: /experience/
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Claude Code</span>
+                            <span class="tech-tag">Codex</span>
+                            <span class="tech-tag">Cursor</span>
+                            <span class="tech-tag">VS Code Copilot</span>
+                            <span class="tech-tag">Kimi Code</span>
                         </div>
                     </div>
                 </div>

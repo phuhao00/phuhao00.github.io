@@ -127,6 +127,17 @@ permalink: /resume/
                     </div>
 
                     <div class="skill-group">
+                        <h3><i class="fas fa-robot"></i> AI开发工具</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag level-expert">Claude Code</span>
+                            <span class="skill-tag level-expert">Codex</span>
+                            <span class="skill-tag level-proficient">Cursor</span>
+                            <span class="skill-tag level-proficient">VS Code Copilot</span>
+                            <span class="skill-tag level-proficient">Kimi Code</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
                         <h3><i class="fas fa-cubes"></i> 区块链</h3>
                         <div class="skill-tags">
                             <span class="skill-tag level-proficient">Sui Move</span>
@@ -341,6 +352,7 @@ permalink: /resume/
                             <li>接入Steam、TapTap热榜，定时追踪热点并自动产出内容</li>
                             <li>实现小红书、抖音、B站、微博、YouTube、Twitter/X一键分发</li>
                             <li>增加内容合规审核与私有知识库引用，保障账号安全和品牌一致性</li>
+                            <li>熟练使用Claude Code、Codex、Cursor、VS Code Copilot、Kimi Code构建高效AI研发工作流</li>
                         </ul>
                         <p class="project-tech">
                             <strong>技术栈：</strong>Go, Python, Vue, LLM Agent, RAG, Docker, MySQL, Redis
