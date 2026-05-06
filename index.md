@@ -16,7 +16,7 @@ title: 首页
         <div class="video-item">
             <div class="video-wrapper">
                 <video controls preload="metadata" playsinline>
-                    <source src="{{ '/assets/video/Feishu20260320-223627.mp4' | relative_url }}" type="video/mp4">
+                    <source src="{{ '/assets/video/Feishu20260506-131528.mp4' | relative_url }}" type="video/mp4">
                     您的浏览器不支持 video 标签。
                 </video>
             </div>
