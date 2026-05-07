@@ -416,40 +416,6 @@ permalink: /resume/
             </div>
         </section>
 
-        <!-- 教育背景 -->
-        <section class="resume-section">
-            <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i> 教育背景
-            </h2>
-            <div class="section-content">
-                <div class="education-item">
-                    <div class="edu-header">
-                        <div class="edu-title">
-                            <h3>计算机科学与技术 · 本科</h3>
-                            <span class="school-name">武汉工商学院</span>
-                        </div>
-                        <div class="edu-date">2015.09 - 2017.06</div>
-                    </div>
-                    <div class="edu-content">
-                        <p>主修课程：数据结构与算法、计算机网络、操作系统、数据库原理、软件工程</p>
-                    </div>
-                </div>
-
-                <div class="education-item">
-                    <div class="edu-header">
-                        <div class="edu-title">
-                            <h3>计算机应用技术 · 大专</h3>
-                            <span class="school-name">武汉科技大学</span>
-                        </div>
-                        <div class="edu-date">2012.09 - 2015.09</div>
-                    </div>
-                    <div class="edu-content">
-                        <p>计算机应用技术专业</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- 自我评价 -->
         <section class="resume-section">
             <h2 class="section-title">
