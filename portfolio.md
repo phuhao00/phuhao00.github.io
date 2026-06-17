@@ -84,6 +84,86 @@ permalink: /portfolio/
         </div>
     </section>
 
+    <!-- AI Agent 项目介绍区 -->
+    <section class="portfolio-section">
+        <h2 class="section-title">
+            <i class="fas fa-robot"></i> AI Agent 平台 · 产品展示
+        </h2>
+        <div class="ai-agent-intro">
+            <p class="ai-agent-desc">一套面向内容创作者与开发者的全链路 AI Agent 平台，集 <strong>智能对话 Agent</strong>、<strong>虚拟伴侣</strong>、<strong>自动化工作流</strong>、<strong>多模态工作台</strong>与 <strong>MCP 能力扩展</strong>于一体，让一个人也能完成整个内容团队的工作。</p>
+        </div>
+        <div class="ai-agent-screenshots">
+
+            <div class="screenshot-group">
+                <h3 class="screenshot-group-title"><i class="fas fa-comments"></i> AI 对话 · 主界面</h3>
+                <div class="screenshot-row">
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/main.png' | relative_url }}" alt="AI Agent 主界面" loading="lazy">
+                        <p>智能对话中枢，支持多 Agent 协作，从想法到交付一站完成</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/companion.png' | relative_url }}" alt="虚拟伴侣" loading="lazy">
+                        <p>3D 虚拟伴侣「波尼」，支持语音交互与情感陪伴</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="screenshot-group">
+                <h3 class="screenshot-group-title"><i class="fas fa-headset"></i> 客服系统 · 工作台</h3>
+                <div class="screenshot-row">
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/customer-service.png' | relative_url }}" alt="智能客服" loading="lazy">
+                        <p>知识库检索 + 大模型回答，支持 FAQ / Agent 双模式</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/workbench.png' | relative_url }}" alt="工作台" loading="lazy">
+                        <p>全链路内容生产工作台：脚本、文案、图片、视频、音乐一站生成</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="screenshot-group">
+                <h3 class="screenshot-group-title"><i class="fas fa-project-diagram"></i> 工作流 · 实验与工具</h3>
+                <div class="screenshot-row">
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/workflow.png' | relative_url }}" alt="自动化工作流" loading="lazy">
+                        <p>可视化拖拽工作流编排，热点生成视频全流程自动化</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/labs.png' | relative_url }}" alt="实验与工具" loading="lazy">
+                        <p>专业 Agent 工具集：客服、法律、广告、游戏策划等垂直领域</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="screenshot-group">
+                <h3 class="screenshot-group-title"><i class="fas fa-plug"></i> MCP 能力 · 平台接入</h3>
+                <div class="screenshot-row">
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/mcp.png' | relative_url }}" alt="MCP 配置" loading="lazy">
+                        <p>MCP 插件市场，一键接入 DuckDuckGo、Playwright、Memory 等能力</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="{{ '/assets/images/ai-agent/platform.png' | relative_url }}" alt="平台接入" loading="lazy">
+                        <p>多平台接入管理：飞书 / Lark、Discord 等 IM 频道统一配置</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ai-agent-tags-row">
+            <span class="tag">Python</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MCP</span>
+            <span class="tag">LLM</span>
+            <span class="tag">工作流自动化</span>
+            <span class="tag">RAG 知识库</span>
+            <span class="tag">飞书 / Discord</span>
+            <span class="tag">多模态</span>
+        </div>
+    </section>
+
     <!-- 项目作品区 -->
     <section class="portfolio-section">
         <h2 class="section-title">
